@@ -1,0 +1,14 @@
+\renewcommand{\backrefpagesname}{Cited on:~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		No citations.%
+	\or
+		Cited on page #2.%
+	\else
+		Cited #1 times on pages #2.%
+	\fi}%
+% ---
+
+\floatstyle{plaintop}
+\restylefloat{table}
